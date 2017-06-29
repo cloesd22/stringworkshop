@@ -11,11 +11,22 @@ Created on Thu Jun 29 04:23:59 2017
 
 class stringworkshop():
     
-    def wordcount(self,word):
-        word = word.split()
-        #print(len(word))
-        return word
+    def wordcount(text):
+        #simple word count, input text, returns integer wordcount
+        wordcount = text.split()
+        wordcount = (len(wordcount))
+        return wordcount
     
-    
+    def wordfreq(word,text):
+        #simple word frequency, provide text, and word returns frequency integer.
+        count = 0
+        
+        textarray = text.split()
+        
+        for unit in textarray:
+            if word ==unit:
+                count=count+1
+        
+        return count
         
         

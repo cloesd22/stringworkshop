@@ -28,5 +28,18 @@ class stringworkshop():
                 count=count+1
         
         return count
+    
+    def avgwordlength(text):
+        #produces average word length
+        stringlength = 0
+        wordlist = text.split()
+        
+                
+        for word in wordlist:
+            stringlength+=len(word)
+        
+        average = stringlength/len(wordlist)
+        print (average)
+        print(len(wordlist))
         
         

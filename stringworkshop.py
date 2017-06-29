@@ -38,8 +38,10 @@ class stringworkshop():
         for word in wordlist:
             stringlength+=len(word)
         
+        if len(wordlist)=0:
+            return 0
+        else:
         average = stringlength/len(wordlist)
-        print (average)
-        print(len(wordlist))
+        return average
         
         
